@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Chorwadi Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="fade-in">Hello, I'm Manan Chorwadi</h1>
+                <p class="subtitle fade-in">Final Year CSE Student | Aspiring Full-Stack Developer | Data Science Enthusiast</p>
+                <div class="cta-buttons fade-in">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image fade-in">
+                        <div class="placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="about-text fade-in">
+                        <h3>Passionate Computer Science Student</h3>
+                        <p>I'm a final year B.Tech Computer Science Engineering student with a strong foundation in Data Structures and Algorithms. Currently exploring the exciting worlds of full-stack development and data science.</p>
+                        <p>My journey in technology has been driven by curiosity and a desire to solve real-world problems through code. I enjoy building systems that make a difference, from operating system schedulers to university management platforms.</p>
+                        <p>When I'm not coding, you'll find me participating in hackathons, earning certifications, or diving deep into new technologies. I believe in continuous learning and staying updated with the latest trends in technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title fade-in">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category fade-in">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">MERN Stack (Learning)</span>
+                            <span class="skill-tag">MEAN Stack (Learning)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3><i class="fas fa-database"></i> Core Concepts</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Operating Systems</span>
+                            <span class="skill-tag">DBMS</span>
+                            <span class="skill-tag">Computer Networks</span>
+                            <span class="skill-tag">Theory of Computation</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3><i class="fas fa-chart-line"></i> Exploring</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Full-Stack Development</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title fade-in">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Process & Task Scheduler</h3>
+                            <p>A comprehensive implementation of various CPU scheduling algorithms including FCFS, Round Robin, and others using Data Structures and Algorithms. This project demonstrates understanding of operating system concepts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Data Structures</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">OS Concepts</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mananchorwadi/process-scheduler"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>University Management System</h3>
+                            <p>Currently developing a comprehensive university management system with smart attendance features. This full-stack project aims to streamline academic administration and student management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">Database</span>
+                                <span class="tech-tag">Smart Attendance</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#"><i class="fas fa-code"></i> In Progress</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <h2 class="section-title fade-in">Certifications & Achievements</h2>
+                <div class="cert-grid">
+                    <div class="cert-card fade-in">
+                        <h3>Computer Networks</h3>
+                        <div class="issuer">NPTEL</div>
+                        <div class="status">Certified</div>
+                    </div>
+                    <div class="cert-card fade-in">
+                        <h3>Theory of Computation</h3>
+                        <div class="issuer">NPTEL</div>
+                        <div class="status">Certified</div>
+                    </div>
+                    <div class="cert-card fade-in">
+                        <h3>Database Management Systems</h3>
+                        <div class="issuer">Infosys Springboard</div>
+                        <div class="status">Certified</div>
+                    </div>
+                    <div class="cert-card fade-in">
+                        <h3>Inceptrix Hackathon</h3>
+                        <div class="issuer">Round 1 Qualifier</div>
+                        <div class="status">Achieved</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title fade-in">Let's Connect</h2>
+                <div class="contact-content fade-in">
+                    <p>I'm always excited to connect with fellow developers, potential employers, and anyone interested in technology. Feel free to reach out!</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/manan-chorwadi-62331b234/" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/mananchorwadi" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://leetcode.com/u/mananchorwadi11/" class="social-link">
+                            <i class="fas fa-code"></i> LeetCode
+                        </a>
+                        <a href="mailto:mananchorwadi11@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://x.com/ChorwadiManan?t=0oyfrfgmOZzQJDujuCbHsA&s=09" class="social-link">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Manan Chorwadi. Built with passion and dedication.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
